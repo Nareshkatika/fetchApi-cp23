@@ -1,7 +1,7 @@
 /* Write your CSS code here */
 
 .imageEl1 {
-  height: 100px;
+  height: 150px;
   width: 300px;
   margin: 10px;
 }
@@ -25,10 +25,15 @@
 .colArrangeEl1 {
   display: flex;
   flex-direction: column;
+  margin-left: 8px;
 }
 
 .listEl {
   list-style: none;
   display: flex;
   flex-direction: row;
+}
+
+.listEl3 {
+  list-style-type: none;
 }

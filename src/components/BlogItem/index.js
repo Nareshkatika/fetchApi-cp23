@@ -1,5 +1,5 @@
 // Write your JS code here
-import {Link} from 'react'
+import {Link} from 'react-router-dom'
 import './index.css'
 
 const Solution = props => {
@@ -7,8 +7,8 @@ const Solution = props => {
   const {title, id, imageUrl, avatarUrl, author, topic} = items
 
   return (
-    <li className="listEl">
-      <Link to={`/blogs/${id}`}>
+    <li className="listEl3">
+      <Link className="listEl" to={`/blogs/${id}`}>
         <img className="imageEl1" alt={title} src={imageUrl} />
         <div className="colArrangeEl1">
           <p>{topic}</p>

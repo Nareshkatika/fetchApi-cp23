@@ -1,1 +1,30 @@
 /* Write your CSS code here */
+
+.rowArrangeEl1 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 14px;
+}
+
+.imageEl34 {
+  height: 300px;
+  width: 600px;
+  text-align: center;
+}
+
+.avatarEl {
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+  margin-top: 12px;
+  margin-right: 5px;
+}
+
+.ArrangeColEl {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleEl8 {
+  text-align: center;
+}
