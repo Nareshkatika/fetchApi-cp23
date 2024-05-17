@@ -7,6 +7,7 @@ import './index.css'
 
 const BlogList = () => {
   const [loading, setLoading] = useState(true)
+  const [blogs, setBlogs] = useState([])
 
   useEffect(() => {
     const getBlogsData = async () => {
@@ -20,8 +21,10 @@ const BlogList = () => {
         author: eachItem.author,
         topic: eachItem.topic,
       }))
-      setLoading((loading: false))
+      setBlogs(formattedData)
+      setLoading(false)
     }
+    getBlogsData()
   }, [])
 
   return (
@@ -32,7 +35,7 @@ const BlogList = () => {
         </div>
       ) : (
         <ul>
-          {getBlogsData.map(eachSol => (
+          {blogs.map(eachSol => (
             <Solution key={eachSol.id} items={eachSol} />
           ))}
         </ul>
