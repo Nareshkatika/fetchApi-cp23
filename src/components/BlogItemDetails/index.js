@@ -27,7 +27,7 @@ const BlogItemDetails = () => {
       setInformation(updatedData)
     }
     getBlogData()
-  }, [id])
+  }, [id]) //   Added id as a dependency in useEffect: This ensures that the effect runs whenever the id changes
 
   const renderOutput = () => {
     const {title, imageUrl, avatarUrl, author, content} = information
