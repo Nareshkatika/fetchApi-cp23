@@ -7,7 +7,7 @@ import Loader from 'react-loader-spinner'
 import './index.css'
 
 const BlogItemDetails = () => {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true)  // in react class components we can add state={blogData:{},isLoading:true}
   const [information, setInformation] = useState({})
   const {id} = useParams()
 
