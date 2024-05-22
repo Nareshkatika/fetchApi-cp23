@@ -6,7 +6,7 @@ import Solution from '../BlogItem'
 import './index.css'
 
 const BlogList = () => {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true) // in class components state={isLoading:true,blogsData:[]}
   const [blogs, setBlogs] = useState([])
 
   useEffect(() => {
